@@ -1,9 +1,10 @@
-function Register(animalId, date, userId, description){
-  this.animalId = animalId;
-  this.date = date;
-  this.userId = userId;
-  this.description = description;
 //Objects
+function AdoptionRegister(adoptionRegisterDate, AdoptionRegisterDescription, animalId, userId){
+  this.adoptionRegisterDate = adoptionRegisterDate;
+  this.AdoptionRegisterDescription = AdoptionRegisterDescription;
+  this.animalId = animalId;
+  this.userId = userId;
+}
 function Animal(animalName, animalAge, animalSpecies, animalColor, animalDescription, animalId){
   this.animalName = animalName;
   this.animalAge = animalAge;
@@ -22,5 +23,4 @@ function User(userFirstName, userLastName, userEmail, userPhone, userId ){
 //Prototype
 User.prototype.fullName = function() {
   return this.userFirstName + " " + this.userLastName;
-
 }
