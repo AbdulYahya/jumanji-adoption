@@ -1,4 +1,4 @@
-function Adoptionregister(animalId, date, userId, description){
+function Register(animalId, date, userId, description){
   this.animalId = animalId;
   this.date = date;
   this.userId = userId;
