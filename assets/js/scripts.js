@@ -20,7 +20,7 @@ function User(userFirstName, userLastName, userEmail, userPhone, userId ){
   this.userPhone = userPhone;
   this.userId = userId;
 }
-//Prototype
+// Prototype
 User.prototype.fullName = function() {
   return this.userFirstName + " " + this.userLastName;
 }
