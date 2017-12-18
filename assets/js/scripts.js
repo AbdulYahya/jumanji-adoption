@@ -1,4 +1,3 @@
-
 function Register(animalId, date, userId, description){
   this.animalId = animalId;
   this.date = date;
