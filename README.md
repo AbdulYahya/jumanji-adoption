@@ -2,7 +2,7 @@
 
 ####
 
-#### By Abdullah Yahya, Kyle Tenzeldam, Edgar C., & Rodnier B.
+#### By Abdullah Yahya, Kyle Tenzeldam, Edgar C., & Rodnier Borrego
 
 ## Specifications
 
