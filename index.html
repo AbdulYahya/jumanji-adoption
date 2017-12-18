@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="header clearfix">
-      <nav class="navbar fixed-top navbar-light bg-light">
+      <nav class="navbar fixed-top navbar-light bg-custom">
         <a class="navbar-brand" href="index.html">
           <img src="assets/images/brand.svg" width="30" height="30" class="" alt="Jumanji Adoption Branding">
           Jumanji Adoption Center
@@ -23,21 +23,57 @@
             <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- 336 x 241 -->
     <div class="container">
       <main role="main">
         <div class="jumbotron">
           <h1 class="display-3">Welcome Customer!</h1>
           <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-lg btn-info" href="#" role="button">Click Me</a></p>
+          <p><a class="btn btn-lg btn-info" data-toggle="collapse" href="#collapseAdopt" aria-expanded="true" aria-controls="collapseAdopt" role="button">Apply for Adoption!</a></p>
+          <div id="collapseAdopt" class="collapse" role="tabpanel" aria-labelledby="headingAdopt" data-parent="#accordion">
+            <div class="card mb-5">
+              <h4 class="card-header">Adoption Application Form</h4>
+              <div class="card-body">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="fName">First Name</label>
+                      <input type="text" class="form-control" id="fName" placeholder="Samwise">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="lName">Last Name</label>
+                      <input type="text" class="form-control" id="lName" placeholder="Gamgee">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="dLicense">Driver's License</label>
+                    <input type="number" class="form-control" id="dLicense" placeholder="12345678">
+                  </div>
+                  <div class="form-group">
+                    <label for="adopt">Adopt</label>
+                    <select id="adopt" class="form-control">
+                      <option selected>Do you want to adopt?</option>
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Agree
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
         </div>
         <h1 class="display-4 house-specials">Pets</h1>
         <p class="text-muted">
@@ -51,7 +87,7 @@
 
                 <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                   <ul class="list-group">
-                    <li class="list-group-item"><span class="badge badge-info">Breed:</span> Lab</li>
+                    <li class="list-group-item">Lab<span class="badge badge-info float-right">Breed</span></li>
                     <li class="list-group-item">Dapibus ac facilisis in</li>
                     <li class="list-group-item">Morbi leo risus</li>
                     <li class="list-group-item">Porta ac consectetur ac</li>

@@ -3,7 +3,9 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-
+.bg-custom {
+  background-color: red;
+}
 .card-img-top {
   width: 336px;
   height: 241px;
